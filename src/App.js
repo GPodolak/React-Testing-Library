@@ -10,7 +10,7 @@ import pokemons from './data';
 import Routes from './routes';
 
 import './App.css';
-
+//opa
 class App extends Component {
   constructor(props) {
     super(props);
