@@ -44,3 +44,4 @@ test('Testando o NotFound a entrar em uma URL desconhecida', () => {
   const pageNotFound = screen.getByText('Page not found');
   expect(pageNotFound).toBeInTheDocument();
 });
+// teste
