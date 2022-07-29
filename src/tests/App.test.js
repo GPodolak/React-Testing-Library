@@ -2,7 +2,7 @@ import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import App from '../App';
-import renderWithRouter from '../components/Aux/RenderWithRouter';
+import renderWithRouter from './Aux/RenderWithRouter';
 // import renderWithRouter from '../Aux/renderWithRouter';
 
 describe('Teste se a aplicação é redirecionada para a página inicial, na URL', () => {
