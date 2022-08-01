@@ -41,7 +41,7 @@ test('Testando o NotFound a entrar em uma URL desconhecida', () => {
   const { history } = renderWithRouter(<App />);
   history.push('/UmaURL');
 
-  const pageNotFound = screen.getByText('Page not found');
+  const pageNotFound = screen.getByText('Page requested not found');
   expect(pageNotFound).toBeInTheDocument();
 });
-// teste
+// test
