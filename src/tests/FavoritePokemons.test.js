@@ -1,14 +1,14 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import FavoritePokemons from '../components/Pokemon';
+import FavoritePokemons from '../components/FavoritePokemons';
 import renderWithRouter from './Aux/RenderWithRouter';
 import App from '../App';
 
 describe('Teste o componente Favorite Pokemons', () => {
-  test('Teste se é exibido na tela a mensagem No favorite Pokemon found', () => {
+  test('Teste se é exibido na tela a mensagem No favorite pokemon found', () => {
     renderWithRouter(<FavoritePokemons />);
-    const pokeMessage = screen.getByText(/No favorite Pokemon found/i);
+    const pokeMessage = screen.getByText(/No favorite pokemon found/i);
     expect(pokeMessage).toBeInTheDocument();
   });
   test('Teste se é exibido todos os cards de pokemons favoritados', () => {
