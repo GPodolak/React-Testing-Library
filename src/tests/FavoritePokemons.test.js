@@ -1,7 +1,7 @@
 import React from 'react';
 import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
-import FavoritePokemons from '../components/FavoritePokemons';
+import FavoritePokemons from '../components/Pokemon';
 import renderWithRouter from './Aux/RenderWithRouter';
 import App from '../App';
 
