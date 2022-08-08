@@ -8,7 +8,7 @@ import App from '../App';
 describe('Teste o componente Favorite Pokemons', () => {
   test('Teste se é exibido na tela a mensagem No favorite pokemon found', () => {
     renderWithRouter(<FavoritePokemons />);
-    const pokeMessage = screen.getByText(/No favorite pokemon found/i);
+    const pokeMessage = screen.getByText(/no favorite pokemon found/i);
     expect(pokeMessage).toBeInTheDocument();
   });
   test('Teste se é exibido todos os cards de pokemons favoritados', () => {
@@ -19,8 +19,8 @@ describe('Teste o componente Favorite Pokemons', () => {
     const favoriteCard = screen.getByLabelText(/Pokémon favoritado?/i);
     userEvent.click(favoriteCard);
 
-    const favoritePokemon = screen.getByText(/Favorite Pokémons/i);
-    userEvent.click(favoritePokemon);
+    const pokefavorite = screen.getByText(/Favorite Pokémons/i);
+    userEvent.click(pokefavorite);
 
     const pikachu = screen.getByRole('img', { name: /pikachu sprite/i });
     expect(pikachu).toBeInTheDocument();
