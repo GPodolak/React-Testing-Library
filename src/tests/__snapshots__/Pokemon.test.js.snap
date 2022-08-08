@@ -1,0 +1,696 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`testando a URL da pagina Pokedex test se a url do link contém o id do pokemon 1`] = `
+<div
+  class="App"
+>
+  <h1>
+    Pokédex
+  </h1>
+  <nav>
+    <a
+      class="link"
+      href="/"
+    >
+      Home
+    </a>
+    <a
+      class="link"
+      href="/about"
+    >
+      About
+    </a>
+    <a
+      class="link"
+      href="/favorites"
+    >
+      Favorite Pokémons
+    </a>
+  </nav>
+  <div
+    class="pokedex"
+  >
+    <h2>
+      Encountered pokémons
+    </h2>
+    <div
+      class="pokemon"
+    >
+      <div
+        class="pokemon-overview"
+      >
+        <p
+          data-testid="pokemon-name"
+        >
+          Pikachu
+        </p>
+        <p
+          data-testid="pokemon-type"
+        >
+          Electric
+        </p>
+        <p
+          data-testid="pokemon-weight"
+        >
+          Average weight: 
+          6.0
+           
+          kg
+        </p>
+        <a
+          href="/pokemons/25"
+        >
+          More details
+        </a>
+      </div>
+      <img
+        alt="Pikachu sprite"
+        src="https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png"
+      />
+    </div>
+    <div
+      class="pokedex-buttons-panel"
+    >
+      <button
+        class="button-text filter-button"
+        data-testid=""
+        type="button"
+      >
+        All
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Electric
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Fire
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Bug
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Poison
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Psychic
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Normal
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Dragon
+      </button>
+    </div>
+    <button
+      class="button-text pokedex-button"
+      data-testid="next-pokemon"
+      type="button"
+    >
+      Próximo pokémon
+    </button>
+  </div>
+</div>
+`;
+
+exports[`testando o icone favorito Test se tem um icone de "fav" quando é adicionado aos favoritos 1`] = `
+<div
+  class="App"
+>
+  <h1>
+    Pokédex
+  </h1>
+  <nav>
+    <a
+      class="link"
+      href="/"
+    >
+      Home
+    </a>
+    <a
+      class="link"
+      href="/about"
+    >
+      About
+    </a>
+    <a
+      class="link"
+      href="/favorites"
+    >
+      Favorite Pokémons
+    </a>
+  </nav>
+  <div
+    class="pokedex"
+  >
+    <h2>
+      Encountered pokémons
+    </h2>
+    <div
+      class="pokemon"
+    >
+      <div
+        class="pokemon-overview"
+      >
+        <p
+          data-testid="pokemon-name"
+        >
+          Pikachu
+        </p>
+        <p
+          data-testid="pokemon-type"
+        >
+          Electric
+        </p>
+        <p
+          data-testid="pokemon-weight"
+        >
+          Average weight: 
+          6.0
+           
+          kg
+        </p>
+        <a
+          href="/pokemons/25"
+        >
+          More details
+        </a>
+      </div>
+      <img
+        alt="Pikachu sprite"
+        src="https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png"
+      />
+    </div>
+    <div
+      class="pokedex-buttons-panel"
+    >
+      <button
+        class="button-text filter-button"
+        data-testid=""
+        type="button"
+      >
+        All
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Electric
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Fire
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Bug
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Poison
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Psychic
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Normal
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Dragon
+      </button>
+    </div>
+    <button
+      class="button-text pokedex-button"
+      data-testid="next-pokemon"
+      type="button"
+    >
+      Próximo pokémon
+    </button>
+  </div>
+</div>
+`;
+
+exports[`testando o icone favorito test se contém um atributo alt com o nome do Pokemon 1`] = `
+<div
+  class="App"
+>
+  <h1>
+    Pokédex
+  </h1>
+  <nav>
+    <a
+      class="link"
+      href="/"
+    >
+      Home
+    </a>
+    <a
+      class="link"
+      href="/about"
+    >
+      About
+    </a>
+    <a
+      class="link"
+      href="/favorites"
+    >
+      Favorite Pokémons
+    </a>
+  </nav>
+  <div
+    class="pokedex"
+  >
+    <h2>
+      Encountered pokémons
+    </h2>
+    <div
+      class="pokemon"
+    >
+      <div
+        class="pokemon-overview"
+      >
+        <p
+          data-testid="pokemon-name"
+        >
+          Pikachu
+        </p>
+        <p
+          data-testid="pokemon-type"
+        >
+          Electric
+        </p>
+        <p
+          data-testid="pokemon-weight"
+        >
+          Average weight: 
+          6.0
+           
+          kg
+        </p>
+        <a
+          href="/pokemons/25"
+        >
+          More details
+        </a>
+      </div>
+      <img
+        alt="Pikachu sprite"
+        src="https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png"
+      />
+    </div>
+    <div
+      class="pokedex-buttons-panel"
+    >
+      <button
+        class="button-text filter-button"
+        data-testid=""
+        type="button"
+      >
+        All
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Electric
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Fire
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Bug
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Poison
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Psychic
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Normal
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Dragon
+      </button>
+    </div>
+    <button
+      class="button-text pokedex-button"
+      data-testid="next-pokemon"
+      type="button"
+    >
+      Próximo pokémon
+    </button>
+  </div>
+</div>
+`;
+
+exports[`testando o icone favorito test se o atributo contém o caminho "src" correto 1`] = `
+<div
+  class="App"
+>
+  <h1>
+    Pokédex
+  </h1>
+  <nav>
+    <a
+      class="link"
+      href="/"
+    >
+      Home
+    </a>
+    <a
+      class="link"
+      href="/about"
+    >
+      About
+    </a>
+    <a
+      class="link"
+      href="/favorites"
+    >
+      Favorite Pokémons
+    </a>
+  </nav>
+  <div
+    class="pokedex"
+  >
+    <h2>
+      Encountered pokémons
+    </h2>
+    <div
+      class="pokemon"
+    >
+      <div
+        class="pokemon-overview"
+      >
+        <p
+          data-testid="pokemon-name"
+        >
+          Pikachu
+        </p>
+        <p
+          data-testid="pokemon-type"
+        >
+          Electric
+        </p>
+        <p
+          data-testid="pokemon-weight"
+        >
+          Average weight: 
+          6.0
+           
+          kg
+        </p>
+        <a
+          href="/pokemons/25"
+        >
+          More details
+        </a>
+      </div>
+      <img
+        alt="Pikachu sprite"
+        src="https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png"
+      />
+    </div>
+    <div
+      class="pokedex-buttons-panel"
+    >
+      <button
+        class="button-text filter-button"
+        data-testid=""
+        type="button"
+      >
+        All
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Electric
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Fire
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Bug
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Poison
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Psychic
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Normal
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Dragon
+      </button>
+    </div>
+    <button
+      class="button-text pokedex-button"
+      data-testid="next-pokemon"
+      type="button"
+    >
+      Próximo pokémon
+    </button>
+  </div>
+</div>
+`;
+
+exports[`teste o coponente pokemon testa o peso medio renderiza corretamente  1`] = `
+<div
+  class="App"
+>
+  <h1>
+    Pokédex
+  </h1>
+  <nav>
+    <a
+      class="link"
+      href="/"
+    >
+      Home
+    </a>
+    <a
+      class="link"
+      href="/about"
+    >
+      About
+    </a>
+    <a
+      class="link"
+      href="/favorites"
+    >
+      Favorite Pokémons
+    </a>
+  </nav>
+  <div
+    class="pokedex"
+  >
+    <h2>
+      Encountered pokémons
+    </h2>
+    <div
+      class="pokemon"
+    >
+      <div
+        class="pokemon-overview"
+      >
+        <p
+          data-testid="pokemon-name"
+        >
+          Pikachu
+        </p>
+        <p
+          data-testid="pokemon-type"
+        >
+          Electric
+        </p>
+        <p
+          data-testid="pokemon-weight"
+        >
+          Average weight: 
+          6.0
+           
+          kg
+        </p>
+        <a
+          href="/pokemons/25"
+        >
+          More details
+        </a>
+      </div>
+      <img
+        alt="Pikachu sprite"
+        src="https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png"
+      />
+    </div>
+    <div
+      class="pokedex-buttons-panel"
+    >
+      <button
+        class="button-text filter-button"
+        data-testid=""
+        type="button"
+      >
+        All
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Electric
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Fire
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Bug
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Poison
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Psychic
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Normal
+      </button>
+      <button
+        class="button-text filter-button"
+        data-testid="pokemon-type-button"
+        type="button"
+      >
+        Dragon
+      </button>
+    </div>
+    <button
+      class="button-text pokedex-button"
+      data-testid="next-pokemon"
+      type="button"
+    >
+      Próximo pokémon
+    </button>
+  </div>
+</div>
+`;

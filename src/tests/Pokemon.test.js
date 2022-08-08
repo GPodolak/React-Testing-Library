@@ -59,4 +59,51 @@ describe('teste o coponente pokemon', () => {
     // O teste irá falhar se as duas imagens não coincidirem:
     // quer a mudança seja inesperada, ou a captura de tela precisa ser atualizada para a nova versão do componente.
   });
+  test('testa se os atributos são renderizados corretamente junto a imagem ', () => {
+    renderWithRouter(<App />);
+    const url = 'https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png';
+    const image = screen.getByRole('img', { name: /pikachu sprite/i });
+    expect(image).toHaveAttribute('src', url);
+  });
+});
+
+describe('testando a URL da pagina Pokedex', () => {
+  test('test se contém um link de navegação "Mostrar detalhes"', () => {
+    renderWithRouter(<App />);
+    const link = screen.getByText(/more details/i);
+    expect(link).toBeInTheDocument();
+  });
+  test('test se a url do link contém o id do pokemon', () => {
+    const { container } = renderWithRouter(<App id="25" />);
+    expect(container.firstChild).toMatchSnapshot();
+  });
+});
+describe('Testando o link de navegação de um pokemon', () => {
+  test('Test se redireciona para detalhes do pokemon quando é clicado', () => {
+    renderWithRouter(<App />);
+    const link = screen.getByText(/more details/i);
+    userEvent.click(link);
+    const pokeSummary = screen.getByRole('heading', { name: /summary/i });
+    expect(pokeSummary).toBeInTheDocument();
+  });
+});
+
+describe('testando o icone favorito', () => {
+  test('Test se tem um icone de "fav" quando é adicionado aos favoritos', () => {
+    const { container } = renderWithRouter(<App
+      alt="Pikachu is marked as favorite"
+      src="/star-icon.svg"
+    />);
+    expect(container.firstChild).toMatchSnapshot();
+  });
+  test('test se o atributo contém o caminho "src" correto', () => {
+    const { container } = renderWithRouter(<App src="/star-icon.svg" />);
+    expect(container.firstChild).toMatchSnapshot();
+  });
+  test('test se contém um atributo alt com o nome do Pokemon', () => {
+    const { container } = renderWithRouter(<App
+      alt="Pikachu is marked as favorite"
+    />);
+    expect(container.firstChild).toMatchSnapshot();
+  });
 });
