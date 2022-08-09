@@ -78,7 +78,6 @@ describe('testando a URL  Pokedex', () => {
     expect(container.firstChild).toMatchSnapshot();
   });
 });
-
 describe('teste se existe um ícone de estrela nos pokémons favoritados:', () => {
   test('Test se tem um icone de "fav" quando é adicionado aos favoritos', () => {
     const { container } = renderWithRouter(<App
